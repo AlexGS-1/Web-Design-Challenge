@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="assets/css/styles.css" media="screen">
+
+  </head>
+
+   <!-- jQuery CDN -->
+   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+   <!-- Bootstrap CDN -->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  <body>
+    <!-- navigation bar -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid navbar-custom">
+
+        <div class="row">
+          <div class="navbar-header">
+              <a class="navbar-brand" href="index.html" id="logo">Latitude Alex</a>
+          </div>
+
+          <!-- navigation content-->
+          <div >
+            <ul class="navbar-right-custom nav navbar-nav navbar-right">
+              <li><a href="comparison.html"> Graph Comparisons</a></li>
+              <li><a href="data.html">All Data</a></li>
+
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Graphs <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="clouds.html">Cloud Graph</a></li>
+                  <li><a href="windy.html">Wind Speed Graph</a></li>
+                 <li><a href="temperature.html">Max Temp Graph</a></li>
+                  <li><a href="humide.html">Humidity Graph</a></li>
+                </ul>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+     <!-- End of navigation bar -->
+
+    <!-- Start of container -->
+    <div class="container">
+      <section class="row">
+        
+        <div class="col-md-4">
+          <!-- Visualization Navigation Images -->
+          <section id="imageNav-area">
+            <div class="imageNav-content">
+              <h2 class="imageNav-header">Visualizations</h2>
+              <hr />
+              <div id="images">
+                <a href="temperature.html"><img src="assets/images/Fig1.png" alt="Latvs.MaxTemp" class="imageNav-photo"></a>
+                <a href="humide.html"><img src="assets/images/Fig2.png" alt="Latvs.Hum" class="imageNav-photo"></a>
+                <a href="clouds.html"><img src="assets/images/Fig3.png" alt="Latvs.Cloud" class="imageNav-photo"></a>
+                <a href="windy.html"><img src="assets/images/Fig4.png" alt="LatWind" class="imageNav-photo"></a>
+              </div>
+            </div>
+          </section>
+          <!-- Visualization Navigation Images -->
+        </div>
+        <div class="col-md-8">
+          <section class="description-content">
+            <h1 class="description-header">Cloudiness</h1>
+            <hr class="description-hr"/>
+            <img src="assets/images/Fig3.png" alt="" class="img-responsive"/>
+            <p>There doesn´t seem to be a direct correlation between amount of clouds, and latitude.</p>
+          </section>
+        </div>
+      </section>
+    </div>
+    <!-- End of container -->
+  </body>
+
+</html>
